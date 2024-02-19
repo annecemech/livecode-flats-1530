@@ -1,5 +1,12 @@
-<div class="container">
-  <h1><%= @flat["name"] %></h1>
-  <p><%= @flat["price"] %> €</p>
-  <img class="w-100" src="<%= @flat["imageUrl"] %>" alt="">
+<div class="container py-4">
+  <div class="row justify-content-center">
+    <div class="col-6">
+      <div class="d-flex justify-content-between align-items-center mb-4">
+        <h1><%= @flat["name"] %></h1>
+        <span class="badge bg-secondary"><%= @flat["price"] %> €</span>
+      </div>
+      <img class="w-100 rounded" src="<%= @flat["imageUrl"] %>" alt="">
+      <%= link_to "Back to flats", root_path, class: "btn btn-primary mt-4"  %>
+    </div>
+  </div>
 </div>

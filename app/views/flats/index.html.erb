@@ -2,8 +2,8 @@
   <h1>Flats</h1>
   <div class="row">
     <% @flats.each do |flat| %>
-    <div class="col-4">
-      <div class="card">
+    <div class="col-4 mb-4">
+      <div class="card h-100">
         <img src="<%= flat["imageUrl"] %>" class="card-img-top" alt="">
         <div class="card-body">
           <h5 class="card-title"><%= flat["name"] %></h5>
